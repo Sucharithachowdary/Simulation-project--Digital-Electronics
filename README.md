@@ -1,5 +1,5 @@
 # TITTLE:
-###Implement Ex nor gate using nand gate only
+Implement Ex nor gate using nand gate only
 
 # THEORY:
 NAND gate - It is a digital circuit that has two or more inputs and produces an output, which is the inversion of logical AND of all those inputs.
@@ -10,16 +10,29 @@ As with the AND function seen previously, the NAND function can also have any nu
 
 Boolean Expression Y = (A.B)'
 
-# LOGIC DIAGRAM
-![output]()
+# LOGIC DIAGRAM:
+![output](https://github.com/Sucharithachowdary/Simulation-project--Digital-Electronics/blob/main/logic%20diagram.png)
 
-# NETLIST DIAGRAM
+# NETLIST DIAGRAM:
 ![output](https://github.com/Sucharithachowdary/Simulation-project--Digital-Electronics/blob/main/draft%20rtl.png)
 
 # TIMING DIAGRAM
 ![output]()
 
-# PROGRAM
+# PROGRAM:
+module exnor_gate(input A, input B, output Y);
+  wire wire1, wire2, wire3;
+
+ 
+  nand_gate nand1(.A(A), .B(B), .Y(wire1));
+  nand_gate nand2(.A(A), .B(wire1), .Y(wire2));
+  nand_gate nand3(.A(B), .B(wire1), .Y(wire3));
+  nand_gate nand4(.A(wire2), .B(wire3), .Y(Y));
+endmodule
+
+module nand_gate(input A, input B, output Y);
+  assign Y = ~(A & B);
+endmodule
 
 
-# REFERENCE
+# REFERENCE:
