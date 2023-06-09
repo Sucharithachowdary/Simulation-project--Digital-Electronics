@@ -17,9 +17,10 @@ Boolean Expression Y = (A.B)'
 ![output](https://github.com/Sucharithachowdary/Simulation-project--Digital-Electronics/blob/main/draft%20rtl.png)
 
 # TIMING DIAGRAM
-![output]()
+![output](https://github.com/Sucharithachowdary/Simulation-project--Digital-Electronics/blob/main/timing.png)
 
 # PROGRAM:
+```
 module exnor_gate(input A, input B, output Y);
   wire wire1, wire2, wire3;
 
@@ -34,5 +35,5 @@ module nand_gate(input A, input B, output Y);
   assign Y = ~(A & B);
 endmodule
 
-
+```
 # REFERENCE:
