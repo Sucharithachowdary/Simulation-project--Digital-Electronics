@@ -1,5 +1,5 @@
 # TITTLE:
-Implement Ex nor gate using nand gate only
+###Implement Ex nor gate using nand gate only
 
 # THEORY:
 NAND gate - It is a digital circuit that has two or more inputs and produces an output, which is the inversion of logical AND of all those inputs.
@@ -14,7 +14,7 @@ Boolean Expression Y = (A.B)'
 ![output]()
 
 # NETLIST DIAGRAM
-![output]()
+![output](https://github.com/Sucharithachowdary/Simulation-project--Digital-Electronics/blob/main/draft%20rtl.png)
 
 # TIMING DIAGRAM
 ![output]()
